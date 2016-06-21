@@ -1,0 +1,47 @@
+.row{:style => 'margin-top:2em;margin-bottom:1em'}
+  .col-xs-12
+    %img{:src => "/images/ruby.svg", :alt => "Ruby", :style => "height:3em"}
+
+.row{:style => "margin-top:1em;margin-bottom:1em"}
+  .col-xs-12
+    %h1 This is Ruby in the Cloud!
+    %p.lead Congratulations! You successfully pushed a Ruby App into the Cloud.
+
+.row{:style => "margin-top:1em;margin-bottom:1em"}
+  .col-xs-12
+    .alert.alert-info
+      %p
+        %strong Getting Started
+      %br
+      %ul
+        %li
+          To push your own source code, either upload it as a ZIP file to the portal or use the
+          %a{:href => "https://github.com/cloudfoundry/cli#downloads"} cf CLI
+          instead.
+        %li
+          %a{:href => "https://docs.developer.swisscom.com/tutorial-node/"} This tutorial
+          will get you started on the whole process.
+
+- if !@env.empty?
+  .row{:style => "margin-top:1em;margin-bottom:1em"}
+    .col-xs-12
+      %h3 System Environment
+      %pre
+        - @envVariables.each do |key, value|
+          <p style="margin-bottom:0.1em"><strong>#{key}:</strong> <span class="text-danger">#{value}</span></p>
+
+- if !@headers.empty?
+  .row{:style => "margin-top:1em;margin-bottom:1em"}
+    .col-xs-12
+      %h3 Request Headers
+      %pre
+        - @headers.each do |key, value|
+          <p style="margin-bottom:0.1em"><strong>#{key}:</strong> <span class="text-danger">#{value}</span></p>
+
+- if !@params.empty?
+  .row{:style => "margin-top:1em;margin-bottom:1em"}
+    .col-xs-12
+      %h3 Request Parameters
+      %pre
+        - @params.each do |key, value|
+          <p style="margin-bottom:0.1em"><strong>#{key}:</strong> <span class="text-danger">#{value}</span></p>

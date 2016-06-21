@@ -1,0 +1,5 @@
+---
+applications:
+- name: default-app-ruby
+  memory: 128M
+  buildpack: ruby_buildpack
