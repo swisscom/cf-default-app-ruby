@@ -1,6 +1,6 @@
 # CF Default App Ruby
 
-The default Ruby app that will be pushed in the Swisscom Application Cloud if no source code is provided
+The default Ruby app that will be pushed in the Swisscom Application Cloud if no source code is provided.
 
 Based on [Sinatra](http://www.sinatrarb.com/).
 
