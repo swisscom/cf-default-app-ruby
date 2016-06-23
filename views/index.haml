@@ -22,26 +22,26 @@
           %a{:href => "https://docs.developer.swisscom.com/tutorial-ruby/"} This tutorial
           will get you started on the whole process.
 
-- if !@env.empty?
+- unless @env_variables.empty?
   .row{:style => "margin-top:1em;margin-bottom:1em"}
     .col-xs-12
       %h3 Environment Variables
       %pre
-        - @envVariables.each do |key, value|
+        - @env_variables.each do |key, value|
           <p style="margin-bottom:0.1em"><strong>#{key}:</strong> <span class="text-danger">#{value}</span></p>
 
-- if !@headers.empty?
+- unless @req_headers.empty?
   .row{:style => "margin-top:1em;margin-bottom:1em"}
     .col-xs-12
       %h3 Request Headers
       %pre
-        - @headers.each do |key, value|
+        - @req_headers.each do |key, value|
           <p style="margin-bottom:0.1em"><strong>#{key}:</strong> <span class="text-danger">#{value}</span></p>
 
-- if !@params.empty?
+- unless @req_params.empty?
   .row{:style => "margin-top:1em;margin-bottom:1em"}
     .col-xs-12
       %h3 Request Parameters
       %pre
-        - @params.each do |key, value|
+        - @req_params.each do |key, value|
           <p style="margin-bottom:0.1em"><strong>#{key}:</strong> <span class="text-danger">#{value}</span></p>
