@@ -1,5 +1,5 @@
 ---
 applications:
 - name: default-app-ruby
-  memory: 128M
+  memory: 64M
   buildpack: ruby_buildpack
