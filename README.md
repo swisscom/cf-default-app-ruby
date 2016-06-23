@@ -15,5 +15,5 @@ Based on [Sinatra](http://www.sinatrarb.com/).
 ## Run in the cloud
 
 1. Install the [cf CLI](https://github.com/cloudfoundry/cli#downloads)
-1. Run `cf push my-ruby-app --random-route`
+1. Run `cf push --random-route`
 1. Visit the given URL
