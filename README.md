@@ -17,3 +17,7 @@ Based on [Sinatra](http://www.sinatrarb.com/).
 1. Install the [cf CLI](https://github.com/cloudfoundry/cli#downloads)
 1. Run `cf push --random-route`
 1. Visit the given URL
+
+## Create ZIP
+
+1. Run `zip -r ruby_app.zip public views app.rb config.ru Gemfile Gemfile.lock`
