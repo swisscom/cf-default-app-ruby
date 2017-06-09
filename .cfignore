@@ -1,2 +1,8 @@
-.bundle
-README.md
+*
+
+!public/
+!views/
+!app.rb
+!config.ru
+!Gemfile
+!Gemfile.lock

@@ -2,12 +2,12 @@
 
 The default Ruby app that will be pushed in the Swisscom Application Cloud if no source code is provided.
 
-Based on [Sinatra](http://www.sinatrarb.com/).
+Based on [Sinatra](http://www.sinatrarb.com/)
 
 ## Run locally
 
 1. Install [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
-1. Install Bundler (accomplish this by running `gem install bundler`)
+1. Install Bundler with `gem install bundler`
 1. Run `bundle install`
 1. Run `bundle exec ruby app.rb -p 3000`
 1. Visit [http://localhost:3000](http://localhost:3000)
